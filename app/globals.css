@@ -2,8 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+  scrollbar-width: none;
+}
+
 :root {
-  --foreground-rgb: 0, 0, 0;
+  --foreground-rgb: 0, 0, 26;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
@@ -11,8 +15,8 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-start-rgb: 0, 0, 26;
+    --background-end-rgb: 0, 0, 26;
   }
 }
 
@@ -24,4 +28,127 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.navBar{
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  column-gap: 50px;
+}
+
+.navBar > *:last-child{
+  margin-right: 20px;
+}
+
+.navBar > *:hover {
+  text-decoration: underline;
+}
+
+.welcome{
+  margin-right: auto;
+  margin-left: 20px;
+}
+
+.image{
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  background-image: url(../public/synthwave.jpg);
+  background-repeat: no-repeat;
+  height: 300px;
+  background-position:50%;
+  background-size:100%;
+}
+
+.changeImage {
+  font-weight: bold;
+  background-color: transparent;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 15px;
+  transition: all .3s;
+  touch-action: manipulation;
+  vertical-align: top;
+  margin: 8px;
+}
+
+.changeImage:hover {
+  background-color: #311e84;
+  opacity: 1;
+  transform: translateY(-2px);
+  transition-duration: .35s;
+}
+
+.changeImage:active {
+  transform: translateY(2px);
+  transition-duration: .35s;
+}
+
+.changeImage:hover {
+  box-shadow: rgba(39, 136, 174, 0.2) 0 6px 12px;
+}
+
+.container{
+  margin: auto;
+  padding-block: 20px;
+  height: 1000px;
+  width: 80%;
+}
+
+.firstSet{
+  display: flex;
+  margin-block: 50px;
+  justify-content:space-around;
+  align-items: center;
+}
+
+.firstSet >*{
+  width: 32%;
+  height: 300px;
+  background-color: blue;
+}
+
+.currentTime{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.currentTime> *:first-child{
+  font-size: 50px;
+}
+
+.currentTime> *:last-child{
+  font-size: 30px;
+}
+
+.secondSet{
+  display: flex;
+  padding-block: 50px;
+  column-gap: 50px;
+}
+
+.tasks{
+  width: 50%;
+  background-color: blue;
+}
+
+.Pomodoro{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 500px;
+  background-image: url(../public/synthwave.jpg);
+  border-radius: 10px;
+
 }
