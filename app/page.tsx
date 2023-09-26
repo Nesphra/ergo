@@ -1,7 +1,7 @@
 'use client'
 import { useEffect } from "react";
 import { useState } from "react";
-import Timer from "./timer";
+import Timer from "./_components/timer";
 
 export default function Home() {
   
@@ -40,7 +40,6 @@ export default function Home() {
               <div>{dayName}</div>
             </div>
           </div>
-          <hr></hr>
           <div className="secondSet">
             <div className="tasks">
               <p>Tasks here</p>

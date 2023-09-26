@@ -35,7 +35,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
   column-gap: 50px;
 }
 
@@ -47,6 +47,10 @@ body {
   text-decoration: underline;
 }
 
+.navBar > *:first-child:hover {
+  text-decoration: none;
+}
+
 .welcome{
   margin-right: auto;
   margin-left: 20px;
@@ -54,8 +58,8 @@ body {
 
 .image{
   display: flex;
-  justify-content: end;
-  align-items: end;
+  justify-content: flex-end;
+  align-items: flex-end;
   background-image: url(../public/synthwave.jpg);
   background-repeat: no-repeat;
   height: 300px;
@@ -111,8 +115,7 @@ body {
 
 .firstSet >*{
   width: 32%;
-  height: 300px;
-  background-color: blue;
+  height: 200px;
 }
 
 .currentTime{
@@ -132,23 +135,13 @@ body {
 
 .secondSet{
   display: flex;
-  padding-block: 50px;
   column-gap: 50px;
-}
-
-.tasks{
-  width: 50%;
-  background-color: blue;
+  margin-inline: 20px;
 }
 
 .Pomodoro{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  height: 500px;
-  background-image: url(../public/synthwave.jpg);
-  border-radius: 10px;
-
+  background-image: url(../public/synthwaveanimation.gif);
+  background-repeat: no-repeat;
+  background-position:50%;
+  background-size:cover;
 }
