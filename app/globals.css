@@ -140,8 +140,5 @@ body {
 }
 
 .Pomodoro{
-  background-image: url(../public/synthwaveanimation.gif);
-  background-repeat: no-repeat;
-  background-position:50%;
-  background-size:cover;
+  background-image: url(../public/synthwave.jpg);
 }
