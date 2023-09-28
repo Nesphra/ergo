@@ -101,7 +101,6 @@ body {
 
 .container{
   margin: auto;
-  padding-block: 20px;
   height: 1000px;
   width: 80%;
 }
@@ -116,27 +115,20 @@ body {
 .firstSet >*{
   width: 32%;
   height: 200px;
-}
-
-.currentTime{
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.currentTime> *:first-child{
-  font-size: 50px;
-}
-
-.currentTime> *:last-child{
-  font-size: 30px;
+  background-color: red;
 }
 
 .secondSet{
   display: flex;
   column-gap: 50px;
   margin-inline: 20px;
+  margin-block: 50px;
+}
+
+.pageTitle{
+  font-size: 30px;
+  text-transform: capitalize;
+  margin-block: 30px;
 }
 
 .Pomodoro{

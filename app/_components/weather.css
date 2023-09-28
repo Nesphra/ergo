@@ -1,0 +1,14 @@
+.weatherBody{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.weatherInfos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

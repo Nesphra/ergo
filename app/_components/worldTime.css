@@ -1,0 +1,16 @@
+.worldTimeBody{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+  
+.worldTimeBody> *:first-child{
+    font-size: 50px;
+}
+  
+.worldTimeBody> *:last-child{
+    font-size: 30px;
+}
+  

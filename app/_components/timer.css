@@ -4,9 +4,10 @@
     justify-content: center;
     align-items: center;
     width: 50%;
-    height: 400px;
+    height: 370px;
     row-gap: 5px;
     padding-bottom: 10px;
+    border-radius: 15px;
 }
 
 .buttonPlay{
@@ -44,12 +45,6 @@
     font-size: 30px;
 }
 
-.sessionCounter{
-    opacity: 0.7;
-    position: absolute;
-    transform: translateY(225%);
-}
-
 .breaks{
     display: flex;
     column-gap: 20px;
@@ -64,13 +59,9 @@
     transition: .2s;
 }
 
-.breaks>button:hover{
-    background-color: whitesmoke;
-    color: black;
-}
-
 .skipTimer{
     position: absolute;
-    transform: translateX(500%);
+    transform: translateX(450%);
     font-size: 40px;
+    transition: 0.2s;
 }
