@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import './worldTime.css'
 
-const worldTime = () => {
+const WorldTime = () => {
 
     const [datetime, setdatetime] = useState("")
     const [dayName, setdayname] = useState("")
@@ -29,4 +29,4 @@ const worldTime = () => {
     )
 }
 
-export default worldTime;
+export default WorldTime;
