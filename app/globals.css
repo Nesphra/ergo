@@ -118,7 +118,7 @@ body {
   background-color: red;
 }
 
-.secondSet{
+.thirdSet{
   display: flex;
   column-gap: 50px;
   margin-inline: 20px;
@@ -133,4 +133,11 @@ body {
 
 .Pomodoro{
   background-image: url(../public/synthwave.jpg);
+}
+
+.secondSet{
+  display: flex;
+  column-gap: 50px;
+  margin-inline: 20px;
+  margin-block: 50px;
 }

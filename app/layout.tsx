@@ -2,6 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Link from 'next/link'
+import Pomodoro from './_components/timer';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -24,6 +25,7 @@ export default function RootLayout({
             <Link href='/notes'>Notes</Link>
             <Link href='/tasks'>Tasks</Link>
             <Link href='/visualizer'>Visualizer</Link>
+            <p></p>
           </nav>
         {children}
       </body>

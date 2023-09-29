@@ -9,7 +9,7 @@ export default function Home() {
     <main>
       <div>
         <div className="image">
-          <button className="changeImage">set image</button>
+          <button className="changeImage">Change Theme</button>
         </div>
         <div className="container">
           <h1 className="pageTitle">simple second brain</h1>
@@ -21,6 +21,11 @@ export default function Home() {
           </div>
           <hr></hr>
           <div className="secondSet">
+            <div>Habit tracker maybe</div>
+            <div>Tasks with slideable in the middle - Separates important from non-important, the slide is used to hide one of both and automatically sticks to the side you drag it to, or it reformats when dragged</div>
+            <div>Reminders - these are push notifications that the user can set up</div>
+          </div>
+          <div className="thirdSet">
             <div className="tasks"><p>Tasks here</p></div>
             <Timer/>
           </div>
