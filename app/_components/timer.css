@@ -39,10 +39,20 @@
 
 .restart{
     font-size: 30px;
+    transition: .5s;
+}
+
+.restart:hover{
+    transform: rotate(-180deg);
 }
 
 .settings{
     font-size: 30px;
+    transition: .5s;
+}
+
+.settings:hover{
+    transform: rotate(180deg);
 }
 
 .breaks{
@@ -64,4 +74,8 @@
     transform: translateX(450%);
     font-size: 40px;
     transition: 0.2s;
+}
+
+.skipTimer:hover{
+    transform: translateX(455%);
 }
