@@ -36,13 +36,13 @@ const Timer = () => {
                   body: 'Time for a long break!',
                   timeout: 4000,
                 });
-                return longBreak + 1; // the + 1 is for formatting
+                return longBreak; // the + 1 is for formatting
               } else {
                 Push.create('Short Break', {
                   body: 'Take a short break!',
                   timeout: 4000,
                 });
-                return shortBreak + 1;
+                return shortBreak;
               }
             } else {  // if the session counter was not a full number, that means you go back to work!
               setTimerMode('pomodoro');
@@ -50,15 +50,15 @@ const Timer = () => {
                 body: "It's time to go back to work!",
                 timeout: 4000,
               });
-              return pomodoroTime + 1;
+              return pomodoroTime;
             }
           }
-          const newTime = prevTime - 1;
+          const newTime = prevTime - 0.2;
           setMinutes(Math.floor(newTime / 60));
-          setSeconds(newTime % 60 < 10 ? `0${newTime % 60}` : String(newTime % 60));
+          setSeconds(newTime % 60 < 10 ? `0${(newTime % 60).toFixed(0)}` : String((newTime % 60).toFixed(0))); // Javascript doesn't like that for some reason, had to use .toFixed(0)
           return newTime;
         });
-      }, 1000);
+      }, 200);
     } else {
       if (intervalId) {
         clearInterval(intervalId); // when the timer is paused, destroy the interval function
@@ -83,7 +83,7 @@ const Timer = () => {
 
   const resetAll = () => {
     setSessionCounter(1);
-    setTime(pomodoroTime + 1);
+    setTime(pomodoroTime);
   };
 
   const skipTimer = () => {

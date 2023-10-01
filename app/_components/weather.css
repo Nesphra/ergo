@@ -1,7 +1,7 @@
 .weatherBody{
     display:flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     height: 100%;
 }
@@ -11,4 +11,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.weatherInfos>*:first-child{
+    font-size: 28px;
+    margin-bottom: 0;
+}
+
+.city{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.city>*:first-child{
+    font-weight: bold;
 }

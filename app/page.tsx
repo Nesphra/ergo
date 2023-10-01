@@ -2,6 +2,7 @@
 import WorldTime from "./_components/worldTime"
 import Timer from "./_components/timer";
 import Weather from "./_components/weather";
+import ProgressBar from "./_components/progressbar";
 
 export default function Home() {
 
@@ -15,7 +16,7 @@ export default function Home() {
           <h1 className="pageTitle">simple second brain</h1>
           <hr></hr>
           <div className="firstSet">
-            <div>Task progress</div>
+            <div><ProgressBar/></div>
             <div><Weather/></div>
             <div><WorldTime/></div>
           </div>
